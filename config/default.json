@@ -1,4 +1,5 @@
 {
 	"port": 80,
-	"dbURI": "mongodb://new_user:tEivIBJ4ukhFKTLb@cluster0-shard-00-00-mxriq.gcp.mongodb.net:27017,cluster0-shard-00-01-mxriq.gcp.mongodb.net:27017,cluster0-shard-00-02-mxriq.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority"
+	"dbURI": "mongodb://new_user:tEivIBJ4ukhFKTLb@cluster0-shard-00-00-mxriq.gcp.mongodb.net:27017,cluster0-shard-00-01-mxriq.gcp.mongodb.net:27017,cluster0-shard-00-02-mxriq.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority",
+	"passphrase": "passphrase"
 }
