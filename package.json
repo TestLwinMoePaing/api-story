@@ -1,0 +1,26 @@
+{
+	"name": "Story_Api",
+	"version": "0.0.1",
+	"description": "Nothing",
+	"main": "./app.js",
+	"scripts": {
+		"dev": "nodemon app.js",
+		"start": "node app.js"
+	},
+	"repository": "''",
+	"author": "'Lwin Moe Paing'",
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"config": "^3.2.2",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"glob": "^7.1.4",
+		"joi": "^14.3.1",
+		"mongoose": "^5.7.0",
+		"morgan": "^1.9.1"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.2"
+	}
+}
