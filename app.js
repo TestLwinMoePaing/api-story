@@ -1,6 +1,6 @@
 const app = require('express')()
 const Config = require('config')
-const port = Config.get('port')
+const port = process.env.PORT || Config.get('port')
 const mongoose = require('mongoose')
 const glob = require('glob')
 
