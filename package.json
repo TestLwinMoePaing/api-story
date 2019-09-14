@@ -4,8 +4,8 @@
 	"description": "Nothing",
 	"main": "./app.js",
 	"scripts": {
-		"dev": "nodemon app.js",
-		"start": "node app.js"
+		"dev": "nodemon ./bin/www",
+		"start": "node ./bin/www"
 	},
 	"repository": "''",
 	"author": "'Lwin Moe Paing'",

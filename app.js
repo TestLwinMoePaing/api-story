@@ -1,7 +1,6 @@
 const app = require('express')()
-const Config = require('config')
-const port = process.env.PORT || Config.get('port')
 const mongoose = require('mongoose')
+const Config = require('config')
 const glob = require('glob')
 
 const connectDB = require('./util/connection')
@@ -13,6 +12,7 @@ useMiddleware(app)
 const { ROUTE_OPTIONS } = require('./controller/routeOptionController')
 app.get('/', ROUTE_OPTIONS)
 
+// routes
 let routes = glob.sync('./routes/*.js')
 routes.forEach((route, i) => {
 	require(route)(app)
@@ -21,5 +21,4 @@ routes.forEach((route, i) => {
 // 404
 app.all('*', (req, res) => res.status(404).json({ code: 404, message: 'Response Not Found' }))
 
-// Listening
-app.listen(port, () => console.log(`Story Api Server Start :${port}`))
+module.exports = app
