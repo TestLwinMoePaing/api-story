@@ -141,7 +141,7 @@ const DELETE_ONE_STORY = async (req, res) => {
 module.exports.DELETE_ONE_STORY = DELETE_ONE_STORY
 
 // All Helper
-const getLocalUri = (req) => req.protocol + '://' + req.get('host')
+const getLocalUri = (req) => (req.secure ? 'https' : req.protocol) + '://' + req.get('host')
 
 const getAllStoryFormat = (story, uri) => {
 	return {
